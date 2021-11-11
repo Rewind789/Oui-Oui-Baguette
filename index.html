@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Oui Oui Baguette</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+      body {
+        min-width: 200px;
+        overflow-x: hidden;
+		font-family:"Quicksand";
+	background-color: #b1884e;
+      }
+
+	  .status {
+		min-width: 150px;
+		font-size: 14px;
+		font-style: italic;
+      }
+
+	  .timeclick {
+		font-size: 30px;
+		font-style: bold;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+
+	  button.clickButton {
+
+		height: 75px;
+		width: 100px;
+	  }
+
+	button {
+  		border-radius: 30px;
+  		width: 125px;
+  		height: 50px;
+  		transform: 1s;
+  		background-color: #CBAF88;
+  		border-top-color: #EAA272;
+  		border-top-width: 3px;
+  		border-bottom-width: 0px;
+  		border-right-width: 0px;
+  		border-left-width: 0px;
+	}
+	
+	button:active {
+		width: 150px;
+		height: 75px;
+	}
+	
+
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body align="center">
+
+		<h3>Oui Oui Baguette</h3>
+
+		<p>Times Clicked:</p>
+		<p id="TimesClicked" class="timeclick"></p>
+		<p id="statusText" class="status"></p>
+		<br>
+		<center>
+		<p>The Shelf</p>
+		<table border=1>
+		<tr>
+		<td>
+		<button class="clickButton" id="clickybutton">Knead The Dough</button>
+		</td>
+		</tr>
+		</table>
+    <br>
+
+  </body>
+</html>
